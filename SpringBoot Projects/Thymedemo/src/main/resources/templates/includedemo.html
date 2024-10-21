@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>This is about page</title>
+	</head>
+	<body>
+		<h1>This is include demo class</h1>
+		<!-- <footer id="host" th:include="footer::foo">
+			<p>This is host footer</p>
+		</footer> -->
+		
+		<p>This is para footer</p>
+		<footer id="host2" th:replace="footer::foo(${title},${subtitle})">
+			<p>This is host 2 footer</p>
+		</footer>
+	</body>
+</html>
+	

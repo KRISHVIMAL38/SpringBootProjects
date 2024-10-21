@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>This is about page</title>
+	</head>
+	<body>
+		<!-- <h1>Gender is <span th:style="${isActive} ? 'color:red' : ''" th:text="${isActive} ? 'It is active' : 'It is not active'"></span></h1> -->
+		<h2 th:if="${gender}=='male'">Gender is male</h2>
+		<h2 th:unless="${gender}=='male'">Gender is female</h2>
+	</body>
+</html>
+	

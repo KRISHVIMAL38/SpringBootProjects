@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>This is about page</title>
+	</head>
+	<body>
+		<!-- <footer th:fragment="foo" id="parasite">
+			<div class="container">
+				<h1>This is footer class</h1>
+				<h2>Jai Shree Ram</h2>
+			</div>
+		</footer> -->
+		
+		<footer th:fragment="foo(title,subtitle)" id="parasite">
+			<div class="container">
+				<h3>Title is <span th:text="${title}"></span></h3>
+				<h3>SubTitle is <span th:text="${subtitle}"></span></h3>
+			</div>
+		</footer>
+	</body>
+	</html>
+	

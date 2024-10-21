@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>This is about page</title>
+	</head>
+	<body>
+	<h1>This is about page</h1>
+		<h1 th:text="${name}"></h1>
+		<h1 th:text="${currdate}"></h1>
+		
+		<h1>The name of owner is <span th:text="${name}"></span></h1>
+		<!-- <h1>We will convert the owner to uppercase <span th:text="${#strings.toUpperCase(name)}"></span></h1> -->
+		
+		<div th:with="a=5, b=10">
+			<h1>value of a is <span th:text="${a}"></span></h1>
+			<h1 th:text="'value of b is '+${b}"></h1>
+			<h1 th:text="'Addition of '+${a}+' and '+${b}+'is '+${a+b}"></h1>
+		</div> 
+	</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>This is about page</title>
+	</head>
+	<body>
+		<h1 th:text="${list}"></h1>
+		<ul>
+			<li th:each="n,i:${list}">
+				<span th:style="${i.odd} ? 'color:red' : ' '" th:text="'Index is '+${i.index}+' Name is '+${n}">
+				</span>
+			</li>
+		</ul>
+	</body>
+</html>
